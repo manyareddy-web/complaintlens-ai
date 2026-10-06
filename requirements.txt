@@ -1,0 +1,16 @@
+# ComplaintLens AI - Python 3.12 / Windows / VS Code
+# Install with:  pip install -r requirements.txt
+
+streamlit>=1.40        # web interface
+pandas>=2.2            # data processing
+numpy>=1.26            # numerical computing
+scikit-learn>=1.4      # TF-IDF + Logistic Regression (also installs joblib)
+nltk>=3.9              # tokenizing, stemming, stop-words
+plotly>=5.22           # interactive charts
+python-dotenv>=1.0     # reads the .env file
+
+# Optional AI upgrade (DistilBERT sentiment). The app runs fine without it,
+# it is only used when USE_TRANSFORMERS=true in .env. These two are large
+# downloads (about 200 MB for torch on Windows).
+transformers>=4.44
+torch>=2.3
